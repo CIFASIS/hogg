@@ -37,7 +37,7 @@ import qualified Data.ByteString.Lazy.Char8 as C
 data OggPacket =
   OggPacket {
     packetData :: !(L.ByteString),
-    packetTrack :: !OggTrack,
+    packetTrack :: OggTrack,
     packetGranulepos :: !Granulepos,
     packetBOS :: !Bool,
     packetEOS :: !Bool,
